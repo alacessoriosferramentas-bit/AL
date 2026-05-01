@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Catálogo | AL Elétrica</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="nav">
+  <div class="container nav-inner">
+    
+    <a class="brand" href="index.html">
+      <img src="img/logoAL.jpeg" alt="AL Elétrica" class="logo" />
+      <span class="badge">TAMANDARÉ-PE</span>
+    </a>
+
+    <nav class="nav-links">
+      <a class="btn" href="catalogo.html">Catálogo</a>
+      <a class="btn primary" href="carrinho.html">
+        Carrinho (<span data-cart-badge>0</span>)
+      </a>
+      <a class="btn" href="https://wa.me/5581984195038" target="_blank" rel="noopener">
+        WhatsApp
+      </a>
+    </nav>
+
+  </div>
+</header>
+
+
+    <main class="container">
+      <div class="section-title">
+        <h2>Catálogo</h2>
+        <span class="badge">Selecione uma categoria</span>
+      </div>
+
+      <div class="toolbar" style="grid-template-columns: 1fr">
+        <input
+          id="q"
+          class="input"
+          placeholder="Buscar: cimento, fio, cano, parafuso..."
+        />
+      </div>
+      
+      <div class="category-chips" data-chips>
+        <!-- Chips carregados via JS -->
+      </div>
+
+      <div style="height: 12px"></div>
+      <section class="grid" data-catalog></section>
+    </main>
+
+    <a href="carrinho.html" class="float-cart">
+      <span>🛒</span>
+      <span class="badge" data-cart-badge>0</span>
+    </a>
+
+    <footer class="footer">
+      <div class="container">
+        <div><b>AL ELÉTRICA, HIDRÁULICA & PARAFUSO</b> • TAMANDARÉ-PE</div>
+        <div class="small">
+          Pedidos via WhatsApp: (81) 98419-5038 • Horário e preços podem variar.
+        </div>
+      </div>
+    </footer>
+    <script src="products.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

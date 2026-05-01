@@ -398,3 +398,5 @@ function init() {
   // Update badges again after some renders just in case
   setTimeout(updateBadges, 100);
 }
+
+document.addEventListener("DOMContentLoaded", init);
